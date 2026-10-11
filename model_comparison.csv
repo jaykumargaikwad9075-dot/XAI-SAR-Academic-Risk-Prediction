@@ -1,0 +1,5 @@
+Model,CV Accuracy,CV Accuracy SD,CV Macro-F1,Test Accuracy,Test Macro-F1
+Logistic Regression,0.9202,0.0369,0.9069,0.9024,0.887
+Decision Tree,0.8556,0.0371,0.8208,0.8537,0.8328
+Random Forest,0.9305,0.0287,0.9163,1.0,1.0
+Gradient Boosting,0.8757,0.0545,0.8485,0.9756,0.9734

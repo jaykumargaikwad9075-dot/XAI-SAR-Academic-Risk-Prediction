@@ -1,0 +1,114 @@
+{
+  "selected_model": "Random Forest",
+  "comparison": [
+    {
+      "Model": "Logistic Regression",
+      "CV Accuracy": 0.9202,
+      "CV Accuracy SD": 0.0369,
+      "CV Macro-F1": 0.9069,
+      "Test Accuracy": 0.9024,
+      "Test Macro-F1": 0.887
+    },
+    {
+      "Model": "Decision Tree",
+      "CV Accuracy": 0.8556,
+      "CV Accuracy SD": 0.0371,
+      "CV Macro-F1": 0.8208,
+      "Test Accuracy": 0.8537,
+      "Test Macro-F1": 0.8328
+    },
+    {
+      "Model": "Random Forest",
+      "CV Accuracy": 0.9305,
+      "CV Accuracy SD": 0.0287,
+      "CV Macro-F1": 0.9163,
+      "Test Accuracy": 1.0,
+      "Test Macro-F1": 1.0
+    },
+    {
+      "Model": "Gradient Boosting",
+      "CV Accuracy": 0.8757,
+      "CV Accuracy SD": 0.0545,
+      "CV Macro-F1": 0.8485,
+      "Test Accuracy": 0.9756,
+      "Test Macro-F1": 0.9734
+    }
+  ],
+  "confusion_matrix": [
+    [
+      13,
+      0,
+      0
+    ],
+    [
+      0,
+      9,
+      0
+    ],
+    [
+      0,
+      0,
+      19
+    ]
+  ],
+  "holdout_report": {
+    "Low Risk": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 13.0
+    },
+    "Medium Risk": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 9.0
+    },
+    "High Risk": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 19.0
+    },
+    "accuracy": 1.0,
+    "macro avg": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 41.0
+    },
+    "weighted avg": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 41.0
+    }
+  },
+  "external_validation": {
+    "n": 201,
+    "note": "No external dataset supplied; evaluation uses stratified hold-out and 5-fold cross-validation."
+  },
+  "shap_mean_abs": {
+    "Average Marks": 0.285,
+    "Attendance (%)": 0.2427,
+    "Assignment Completed": 0.2063,
+    "Behaviour": 0.149,
+    "Study Hours (per day)": 0.0742,
+    "Other Activities": 0.0275
+  },
+  "spearman_rho": 0.9258200997725515,
+  "spearman_p": 0.008049893100837697,
+  "plan_improves_pct": 0.9357142857142857,
+  "example_students": {
+    "Low Risk": "STU098",
+    "Medium Risk": "STU095",
+    "High Risk": "STU103"
+  },
+  "class_counts": {
+    "Low Risk": 61,
+    "Medium Risk": 45,
+    "High Risk": 95
+  },
+  "dataset_records": 201,
+  "dataset_note": "Model and evaluation outputs regenerated on all 201 synthetic student records."
+}
